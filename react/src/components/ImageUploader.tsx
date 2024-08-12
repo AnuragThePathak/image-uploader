@@ -47,7 +47,8 @@ export default function ImageUploader({ onUpload }: { onUpload: () => Promise<vo
 							className="flex flex-col p-4 space-y-8">
 							<div className="flex flex-col space-y-2">
 								<label className="text-lg">Select Image</label>
-								<input type="file" id="file" onChange={handleFileChange} />
+								<input type="file" id="file" accept="image/jpeg, image/png"
+								onChange={handleFileChange} />
 							</div>
 							<div className="flex flex-row space-x-4 justify-center">
 								<button type="submit"
